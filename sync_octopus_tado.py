@@ -11,7 +11,7 @@ def get_meter_reading_total_consumption(api_key, mprn, gas_serial_number):
     url = f"https://api.octopus.energy/v1/gas-meter-points/{mprn}/meters/{gas_serial_number}/consumption/?group_by=quarter"
 
     # Set offset meter reading (final reading from previous supplier)
-    total_consumption = 2193
+    total_consumption = 2213
 
     while url:
         response = requests.get(
